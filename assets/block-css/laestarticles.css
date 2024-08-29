@@ -1,0 +1,227 @@
+.articles {
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.curvebg {
+  position: absolute;
+  z-index: -1;
+  top: -290px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.curvebg img {
+  width: 100%;
+}
+
+.articles::after {
+  content: "";
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  bottom: -100px;
+  background-color: #F7F7F7;
+  z-index: -1;
+}
+
+.flexarticle {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -38px;
+}
+
+.postItem {
+  flex: 0 0 auto;
+  padding: 0 38px;
+  width: fit-content;
+  height: fit-content;
+  padding-bottom: 140px;
+}
+
+.postinner {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.articles .slick-center {
+  transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  margin-top: 140px;
+  padding-bottom: 0;
+}
+
+.postItem img {
+  width: 100%;
+  min-height: 230px;
+  max-height: 230px;
+  display: flex;
+}
+
+.postconent {
+  background-color: #fff;
+  padding: 20px 24px;
+}
+
+.postconent .date {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 15px;
+  color: #FF9300;
+}
+
+.postconent h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #00544A;
+}
+
+.postconent a {
+  display: block;
+  width: fit-content;
+  padding: 6px 10px;
+  background: #00544A;
+  box-shadow: 0px 0px 20px rgba(255, 193, 105, 0.1);
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+  transition: all .3s linear;
+}
+
+.postconent a:hover {
+  background-color: #FF9300;
+}
+
+.imgAppmbl img {
+  margin-bottom: -60px;
+  z-index: -2;
+}
+
+.articles .btnpost {
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.titlepost {
+  margin-bottom: -120px;
+}
+
+.titlepost h2,
+.titlepost h2 span {
+  font-family: 'Roobert-Bold';
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 60px;
+  text-align: center;
+}
+
+/* responsive */
+
+@media(min-width:1640px) {
+  .curvebg {
+    top: -310px;
+  }
+}
+
+@media(min-width:1900px) {
+  .curvebg {
+    top: -336px;
+  }
+}
+
+@media(max-width:860px) {
+  .flexarticle {
+    margin: 0 -15px;
+  }
+
+  .postItem {
+    padding: 0 15px;
+  }
+
+  .titlepost {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .hascurve .titlepost {
+    position: relative;
+    top: -90px;
+  }
+
+  .articles::after {
+    bottom: -60px;
+  }
+
+  .curvebg {
+    top: -260px;
+  }
+}
+
+@media (max-width:660px) {
+  .curvebg {
+    top: -220px;
+  }
+
+  .articles::after {
+    height: 120px;
+  }
+
+  .titlepost h2,
+  .titlepost h2 span {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+
+
+  .qrwrap {
+    min-width: 320px;
+    padding: 40px 20px 20px;
+  }
+
+  .qrwrap h3,
+  .qrwrap h3 span {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .qrwrap ._close {
+    top: -10px;
+    right: -5px;
+  }
+
+  .appcontentside h2,
+  .appcontentside h2 span {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+}
+
+@media (max-width:480px) {
+  .curvebg {
+    top: -180px;
+  }
+
+  .articles {
+    background-color: #F7F7F7;
+  }
+
+  .postItem {
+    padding-bottom: 10px;
+  }
+
+}
+
+@media (max-width:390px) {
+  .curvebg {
+    top: -170px;
+  }
+}

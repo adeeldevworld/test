@@ -1,0 +1,53 @@
+.flex-app {
+  display: flex;
+  align-items: center;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.imgAppmbl {
+  z-index: -1;
+}
+
+.imgAppmbl img {
+  margin-bottom: -60px;
+}
+
+.appcontentside {
+  margin-top: -150px;
+}
+
+.appcontentside h2,
+.appcontentside h2 span {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 60px;
+  margin-bottom: 15px;
+}
+
+.appcontentside p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.appbtns {
+  display: flex;
+  margin-top: 20px;
+}
+
+.appbtns a:first-child {
+  margin-right: 10px;
+}
+
+@media(max-width:860px) {
+  .flex-app {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .appcontentside {
+    margin-top: 0;
+  }
+
+}

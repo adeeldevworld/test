@@ -1,0 +1,91 @@
+.mainVideoSection {
+  position: relative;
+  min-height: 800px;
+  padding-top: 270px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mainVideoSection::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(90deg, #00544A 17.5%, rgba(0, 84, 74, 0) 48.82%);
+  mix-blend-mode: normal;
+  z-index: -1;
+}
+
+.bgVideo {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.bgVideo video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.mainVideoSection h1 {
+  font-family: 'Titillium Web';
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 70px;
+  color: var(--text-primary-color);
+}
+
+.subheadingmain {
+  margin-top: 30px;
+}
+
+.subheadingmain p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  color: var(--text-primary-color);
+  margin: 0;
+}
+
+.subheadingmain p span {
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+/* responsive */
+@media(max-width:1380px) {
+  .mainVideoSection {
+    padding-top: 220px;
+    min-height: 100vh;
+  }
+}
+
+@media(max-width:860px) {
+  .mainVideoSection {
+    padding-top: 180px;
+    min-height: 600px;
+  }
+}
+
+@media (max-width:660px) {
+  .mainVideoSection {
+    min-height: 70vh;
+    padding-top: 140px;
+    padding-bottom: 40px;
+  }
+
+  .mainVideoSection h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .subheadingmain p {
+    font-size: 20px;
+    line-height: normal;
+  }
+}

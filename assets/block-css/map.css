@@ -1,0 +1,163 @@
+.mapsectionspace {
+  margin: 170px 0 100px;
+  position: relative;
+}
+
+.mapsectionspace::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(8deg, #FFFFFF 10.57%, #F6F6F6 71.86%);
+  z-index: -1;
+  top: -44%;
+  clip-path: polygon(0 29%, 100% 1%, 100% 100%, 0 100%);
+}
+
+.mapflex {
+  display: flex;
+}
+
+.mapcontentwrap {
+  flex: 0 0 auto;
+  width: 460px;
+}
+
+.mapwrap {
+  flex: 0 0 auto;
+  width: calc(100% - 460px);
+}
+
+.locationwrap {
+  width: calc(100% + 100px);
+  position: relative;
+  z-index: -1;
+  left: -100px;
+}
+
+.mapblock {
+  padding: 35px 44px 0 64px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  margin-bottom: 18px;
+}
+
+.mapblock p:last-child {
+  margin: 0;
+}
+
+.mapblock .blokcontent p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--text-primary-color);
+}
+
+.topblock strong {
+  color: var(--primary-color);
+}
+
+.mapblock .bottomimage img {
+  display: flex;
+}
+
+.bottomblock .blokcontent strong {
+  color: #36D8BB;
+}
+
+.bottomblock .bottomimage img {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 38px;
+}
+
+.mapheadingwrap {
+  max-width: 450px;
+  margin: 0 auto;
+  margin-top: -60px;
+}
+
+.mapheadingwrap h2,
+.mapheadingwrap h2 span {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 60px;
+}
+
+.mapheadingwrap p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #5A5A5A;
+}
+
+.locationwrap {
+  margin-top: 130px;
+}
+
+.bottomlogomedia {
+  max-width: 300px;
+  margin-top: 40px;
+}
+
+@media(max-width:860px) {
+  .mapflex {
+    flex-wrap: wrap;
+  }
+
+  .mapcontentwrap {
+    width: 100%;
+  }
+
+  .mapsectionspace {
+    margin: 60px 0;
+  }
+
+  .mapheadingwrap {
+    margin-top: 0;
+  }
+
+  .mapwrap {
+    width: 100%;
+  }
+
+  .locationwrap {
+    left: 0;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .locationwrap img {
+    width: 100%;
+  }
+
+  .order-1 {
+    order: 1;
+  }
+}
+
+@media(max-width:660px) {
+
+  .mapheadingwrap h2,
+  .mapheadingwrap h2 span {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+}
+
+@media(max-width:480px) {
+  .mapheadingwrap p {
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .mapblock {
+    padding: 25px 25px 0;
+  }
+
+  .mapblock .blokcontent p {
+    font-size: 16px;
+    line-height: normal;
+  }
+}
